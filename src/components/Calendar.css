@@ -1,0 +1,26 @@
+.calendar {
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 100%;
+  max-width: 900px;
+}
+
+.calendar__header {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.calendar__day-name {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: grey;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.calendar__days {
+  display: flex;
+  flex-wrap: wrap;
+}

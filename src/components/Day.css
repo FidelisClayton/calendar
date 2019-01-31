@@ -1,0 +1,41 @@
+.day {
+  flex: 1 0 14%;
+  flex-grow: 1;
+  height: 100px;
+  border: 1px solid grey;
+  position: relative;
+  overflow-y: auto;
+}
+
+.day__number {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.day--disabled > .day__number {
+  opacity: 0.3;
+}
+
+.day__event {
+  background-color: pink;
+  margin-bottom: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  cursor: pointer;
+  z-index: 2;
+  position: relative;
+}
+
+.day__event:first-of-type {
+  margin-top: 25px;
+}
+
+.day__click-handler {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
